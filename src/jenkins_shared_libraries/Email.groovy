@@ -1,3 +1,4 @@
+package jenkins_shared_libraries;
 class Email {
     static final MY_CONSTANT = "To jest moja stała"
 
