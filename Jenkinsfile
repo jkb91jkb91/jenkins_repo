@@ -10,21 +10,6 @@ pipeline {
                 }
             }
         }
-          stage('Remote2 Job Trigger') {
-            steps {
-                script {
-                    
-                
-                    withCredentials([usernamePassword(credentialsId: 'MySecret', usernameVariable: 'username', passwordVariable: 'password')]) {
-                        sh "echo '$username and $password'"
-                    }
-                    
-                  
-                   
-                    
-                }
-            }
-        }
     }
 }
 
