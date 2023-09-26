@@ -6,7 +6,16 @@ pipeline {
         stage('Remote Job Trigger') {
             steps {
                 script {
-                  my_Library.Email.print()
+                    def emailInstance = new my_Library.Email(this)
+                  // my_Library.Email.()
+         
+                     // def m = new Email(this)
+                     // m.send(
+                     //      subjectTag   : 'FAILURE',
+                     //      to:          : 'also-to-me@gmail.com',
+                     //      body         : '&lt;p&gt;Test failed!&lt;/p&gt;',
+                     //      addProviders : true
+                     //  )
                
                 }
             }
