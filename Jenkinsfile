@@ -6,8 +6,8 @@ pipeline {
         stage('Remote Job Trigger') {
             steps {
                 script {
-                    def emailClass = load("Email.groovy")
-                    echo "Wartość stałej MY_CONSTANT: ${emailClass.MY_CONSTANT}"
+                   def emailClass = load("src/jenkins_shared_libraries/Email.groovy")
+                   echo "Wartość stałej MY_CONSTANT: ${emailClass.MY_CONSTANT}"
                
                 }
             }
