@@ -5,8 +5,7 @@ pipeline {
         stage('Remote Job Trigger') {
             steps {
                 script {
-                    def path = "${env.WORKSPACE}/here.txt"
-                    writeFile file: path, text: "gowno"
+                   helloWorld()
                
                 }
             }
