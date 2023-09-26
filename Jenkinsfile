@@ -1,4 +1,5 @@
 @Library("my_Library") _
+import my_Library.Email
 pipeline {
     agent any
 
@@ -6,8 +7,7 @@ pipeline {
         stage('Remote Job Trigger') {
             steps {
                 script {
-                   def emailClass = load("src/jenkins_shared_libraries/Email.groovy")
-                   echo "Wartość stałej MY_CONSTANT: ${emailClass.MY_CONSTANT}"
+                   import my_Library.Email
 
                
                 }
