@@ -1,5 +1,5 @@
 @Library("my_Library") _
-import my_Library.Email
+import package jenkins_shared_libraries.*;
 pipeline {
     agent any
 
