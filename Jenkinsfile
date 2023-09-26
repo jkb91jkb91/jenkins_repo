@@ -6,10 +6,7 @@ pipeline {
         stage('Remote Job Trigger') {
             steps {
                 script {
-                   helloWorld()
-                   emailext body: 'Test Message',
-                    subject: 'Test Subject',
-                    to: 'jakub.g26101991@gmail.com'
+                  my_Library.Email.print()
                
                 }
             }
