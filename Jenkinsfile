@@ -8,6 +8,7 @@ pipeline {
                 script {
                    def emailClass = load("src/jenkins_shared_libraries/Email.groovy")
                    echo "Wartość stałej MY_CONSTANT: ${emailClass.MY_CONSTANT}"
+
                
                 }
             }
