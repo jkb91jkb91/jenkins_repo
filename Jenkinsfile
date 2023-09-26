@@ -6,7 +6,7 @@ pipeline {
         stage('Remote Job Trigger') {
             steps {
                 script {
-                    def emailInstance = new my_Library.Email(this)
+                     def m = new Email(this)
                   // my_Library.Email.()
          
                      // def m = new Email(this)
