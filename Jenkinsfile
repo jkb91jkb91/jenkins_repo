@@ -3,6 +3,9 @@ pipeline {
 
     stages {
         stage('Hello') {
+            options {
+                skipDefaultCheckout()
+            }
       
             steps {
                 echo "Hello"
