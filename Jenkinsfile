@@ -10,7 +10,6 @@ pipeline {
         stage('Hello') {
        
 
-            
             steps {
                 script {
                      knife.printName 'hello'
