@@ -8,10 +8,7 @@ pipeline {
 
         
         stage('Hello') {
-            options {
-                
-                skipDefaultCheckout()
-            }
+       
 
             
             steps {
