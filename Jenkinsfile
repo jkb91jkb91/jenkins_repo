@@ -13,7 +13,7 @@ pipeline {
             
             steps {
                 script {
-                     knife.printName "kuba"
+                     knife.printName 'kuba'
                   
                  
                  
