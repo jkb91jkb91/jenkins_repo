@@ -1,3 +1,4 @@
+@Library('pipeline-shared-lib') _
 pipeline {
     agent any
 
