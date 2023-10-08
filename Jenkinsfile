@@ -12,8 +12,7 @@ pipeline {
 
             steps {
                 script {
-                     slack.message('fail')
-
+                     slack.message('success')
             }
         }
     }
