@@ -1,3 +1,3 @@
-def run() {
+def execute() {
      sh 'mvn install -DskipTests'
 }
