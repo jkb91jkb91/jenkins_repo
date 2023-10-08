@@ -15,8 +15,8 @@ pipeline {
 
             
             steps {
-                echo "Heldfsdsddsdsdfsddlo"
-        
+                script {
+                     knife.printName "kuba"
                   
                  
                  
@@ -24,6 +24,7 @@ pipeline {
             }
         }
     }
+}
 }
 
 
