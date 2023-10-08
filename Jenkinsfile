@@ -13,7 +13,7 @@ pipeline {
             steps {
                 script {
                      knife.printName 'hello'
-                     slackSend message 'sds'
+                     slackSend message: 'sds'
             }
         }
     }
