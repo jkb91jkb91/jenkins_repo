@@ -14,10 +14,7 @@ pipeline {
             steps {
                 script {
                      knife.printName 'hello'
-                  
-                 
-                 
-               
+                     slackSend (color: '#00FF00', message: "Build successful") 
             }
         }
     }
